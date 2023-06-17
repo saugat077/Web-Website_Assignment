@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+/* Resetting*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Top part css */
+.top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.center {
+  display: flex;
+}
+
+.top-img {
+  width: 200px;
+}
+
+.top-info {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+i {
+  margin-right: 20px;
+}
+
+.info {
+  margin-left: 20px;
+}
+
+/* NavBar CSS */
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+}
+
+.wrap {
+  width: 60%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wrap a {
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #069;
+  border-right: 1px solid #ccc;
+}
+
+.wrap a:hover,
+.wrap a:active {
+  color: rgb(220, 145, 7);
+}
+
+
+/* Home Page */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.home-content{
+  display: flex;
+}
+
+.home-content .lpanel img {
+  width: 600px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.655), -2px -2px 4px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.rpanel {
+  width: 400px;
+  margin: 20px;
+}
+
+.rtop h1,
+.rtop span {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+.rbottom {
+  width: 400px;
+  padding: 10px;
+  border: 5px solid #c5c4c466;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.rbottom p {
+  column-count: 2;
+}
+
+
+/* Faculty Page */
+.faculty-content{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 10px;
+}
+
+.faculty-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 250px;
+  height: 700px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.203);
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.faculty-info h2 {
+  font-size: 42px;
+  margin-top: 8px;
+  border-bottom: 2px solid #ccc;
+}
+
+.faculty-info p {
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Gallery */
+
+  .main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(6, 150px);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    }
+
+    .main-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.332), -2px -2px 4px rgba(0, 0, 0, 0.332);
+    }
+    
+    .gallery1 { grid-area: 1 / 1 / 3 / 2; }
+    .gallery2 { grid-area: 1 / 2 / 3 / 4; }
+    .gallery3 { grid-area: 1 / 4 / 3 / 5; }
+    .gallery4 { grid-area: 3 / 1 / 4 / 2; }
+    .gallery5 { grid-area: 3 / 2 / 4 / 3; }
+    .gallery6 { grid-area: 3 / 3 / 4 / 4; }
+    .gallery7 { grid-area: 3 / 4 / 4 / 5; }
+    .gallery8 { grid-area: 4 / 3 / 6 / 5; }
+    .gallery9 { grid-area: 4 / 1 / 5 / 3; }
+    .gallery10 { grid-area: 5 / 1 / 7 / 2; }
+    .gallery11 { grid-area: 5 / 2 / 7 / 3; }
+    .gallery12 { grid-area: 6 / 3 / 7 / 4; }
+    .gallery13 { grid-area: 6 / 4 / 7 / 5; }
+
+/* For About us */
+header h1 {
+  color: #ea8c20;
+  font-family: Sans-serif;
+  font-weight: 300;
+}
+
+.aboutus-content {
+  width: 850px;
+  padding: 25px;
+  display: flex;
+}
+
+.container {
+  padding: 10px 0px;
+  font-family: Sans-serif;
+  color: rgb(43, 42, 42);
+  font-size: 20px;
+  font-weight: 300;
+  column-count: 2;
+}
+
+.aboutus-test {
+  padding-left: 25px;
+}
+
+/* Contact Us */
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+  width: 850px;
+  margin-top: 10px;
+}
+
+.contact-details {
+  line-height: 40px;
+}
+
+#form-info h5 {
+  font: 400 16px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 10px;
+}
+
+input {
+  padding: 5px;
+  width: 268px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
